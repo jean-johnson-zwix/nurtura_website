@@ -2,7 +2,7 @@
 
 A website to assist the user in having good nutrition while also accommodating certain medical needs.
 
-Team Members
+## Team Members
 
 - Jean Johnson
 - Saanvi Kakde
