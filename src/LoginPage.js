@@ -4,7 +4,7 @@ import { useState } from "react"; //manage state variables
 import { Card, Form, Input, Button, Alert } from "antd"; //antdesign 
 import { useNavigate } from "react-router-dom";
 import "./login-page.css";  
-import logo from "./logo.svg"; 
+import logo from "./images/nurtura_logo.svg"; 
 
 
 const LoginPage = ({ loginUser }) => {
@@ -53,7 +53,7 @@ const LoginPage = ({ loginUser }) => {
             <div className="login-logo"> 
                 <img src={logo} alt="Logo" />
             </div>
-            <h2>Login to Your Account</h2>
+            <h2>Sign in:</h2>
 
             {alert} 
 
@@ -63,7 +63,7 @@ const LoginPage = ({ loginUser }) => {
                 <Form.Item
                     label="Username"
                     name="username"
-                    rules={[{ required: true, message: "Enter your username!" }]}
+                    rules={[{ required: true, message: "Please enter your username." }]}
                     >
                         <Input />
                     </Form.Item>
@@ -71,13 +71,13 @@ const LoginPage = ({ loginUser }) => {
                 <Form.Item 
                     label = "Password"
                     name = "password"
-                    rules= {[{ required: true, message: "Enter your password! "}]}
+                    rules= {[{ required: true, message: "Please enter your password."}]}
                     >
                         <Input.Password />
                     </Form.Item>
 
-                <Form.Item> 
-                    <Button type = "primary" htmlType="submit" loading={loading}>
+                <Form.Item className= "login-button-container">
+                    <Button className="login-button" htmlType="submit" loading={loading}>
                         Login
                     </Button>
                 </Form.Item>

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './images/nurtura_logo.svg';
 import './App.css';
 import LoginPage from "./LoginPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
