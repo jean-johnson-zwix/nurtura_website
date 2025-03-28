@@ -60,3 +60,12 @@
     font-weight: bold;
 }
 
+.signup-button-container {
+  display: flex;
+  justify-content: flex-start; /* Moves button to the right */
+
+}
+
+
+
+

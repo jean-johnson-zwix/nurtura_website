@@ -44,6 +44,10 @@ const LoginPage = ({ loginUser }) => {
 
     };
 
+    const handleSignupRedirect = () => {
+        navigate("/signup"); // make sure this route exists in your router
+    };
+
     return (
 
         <div className = "login-container"> {/*wrapper container*/}
@@ -81,7 +85,16 @@ const LoginPage = ({ loginUser }) => {
                         Login
                     </Button>
                 </Form.Item>
+
             </Form>
+
+            <div className="signup-button-container" style={{ textAlign: "center", marginTop: "10px" }}>
+             <span>Don't have an account? </span>
+             <Button type="link" onClick={handleSignupRedirect}>
+              Sign Up
+             </Button>
+            </div>
+
             </Card>
         </div>
     );

@@ -1,6 +1,7 @@
 //import logo from './images/nurtura_logo.svg';
 import './App.css';
 import LoginPage from "./LoginPage";
+import CreatePage from "./CreatePage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
@@ -30,7 +31,8 @@ function App() {
 return (
   <Router>  {/* ✅ Wrap everything inside <Router> */}
     <Routes>
-      <Route path="/" element={<LoginPage />} /> {/* ✅ Route for LoginPage */}
+      <Route path="/" element={<LoginPage />} /> {/* Route for LoginPage */}
+      <Route path="/signup" element={<CreatePage />} /> {/* added signup route */}
     </Routes>
   </Router>
 );
