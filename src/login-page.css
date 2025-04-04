@@ -46,18 +46,23 @@
   }
 
   .login-button-container {
-    display: flex;
-    justify-content: flex-end; /* Moves button to the right */
+
+      display: flex;
+      justify-content: space-between;
+      align-items: right;
+      width: 100%;
+    
 }
 
   .login-button {
 
-    width: 105%;
+    width: 20%;
     border-radius: 0px; 
     background-color: #596d5e; /* Grey background */
     border-color: #5d706b; /* Grey border */
     color: white; /* White text for contrast */
     font-weight: bold;
+    margin-left: 50px;
 }
 
 .signup-button-container {
@@ -65,7 +70,6 @@
   justify-content: flex-start; /* Moves button to the right */
 
 }
-
 
 
 
