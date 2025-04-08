@@ -33,6 +33,7 @@ return (
     <Routes>
       <Route path="/" element={<LoginPage />} /> {/* Route for LoginPage */}
       <Route path="/signup" element={<CreatePage />} /> {/* added signup route */}
+      <Route path = "/dashboard" element={'Dashboard'} />
     </Routes>
   </Router>
 );
