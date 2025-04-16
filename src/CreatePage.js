@@ -87,7 +87,7 @@ const CreatePage = () => {
                             Sign in
                         </Button>
                         </div>
-                        <Button className="login-button" htmlType="submit" loading={loading}>
+                        <Button className="signup-button" htmlType="submit" loading={loading}>
                         Sign Up
                         </Button>
                     </div>
