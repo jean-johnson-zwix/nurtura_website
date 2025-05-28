@@ -54,7 +54,7 @@
     
 }
 
-  .login-button {
+  .signup-button {
 
     width: 20%;
     border-radius: 0px; 
@@ -64,6 +64,28 @@
     font-weight: bold;
     margin-left: 50px;
 }
+
+.analyze-button {
+
+  width: 30%;
+  border-radius: 0px; 
+  background-color: #596d5e; /* Grey background */
+  border-color: #5d706b; /* Grey border */
+  color: white; /* White text for contrast */
+  font-weight: bold;
+}
+
+.login-button {
+
+  width: 30%;
+  border-radius: 0px; 
+  background-color: #596d5e; /* Grey background */
+  border-color: #5d706b; /* Grey border */
+  color: white; /* White text for contrast */
+  font-weight: bold;
+  margin-left: 270px;
+}
+
 
 .signup-button-container {
   display: flex;
