@@ -17,20 +17,22 @@ const LoginPage = ({ loginUser }) => {
     const onFinish = async (data) => {
         setLoading(true); 
         setAlert(null); //clears prev alerts 
-        console.log("Login Success: ", data);
+        console.log("Login Request: ", data);
 
         try {
             //sending api request 
             const response = await axios.post(
                 `${process.env.REACT_APP_BACKEND_ENDPOINT}/auth/login`, 
                 {
-                username: data.username, 
+                user_name: data.username, 
                 password: data.password
                 }
             );
+            console.log('response: ',response)
 
-            if (response.data.success) {
-                loginUser(response.data.success); 
+            if (response.status == 200) {
+                console.log(response.data.success)
+                //loginUser(response.data.success); 
                 navigate("/dashboard"); // redirect on success
             } else {
                 setAlert(<Alert message="Invalid data" type="error" closable />);
