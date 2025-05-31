@@ -1,7 +1,7 @@
 # nurtura_website
 
 A website to assist users in having good nutrition by extracting data from nutrition labels and providing AI-generated feedback.
-The project uses React + JavaScript for the front-end. 
+The project uses React + JavaScript for the front-end and Python for the back-end. 
 
 # Gallery 
 <img width="500" alt="Screenshot 2025-05-31 at 10 07 23 AM" src="https://github.com/user-attachments/assets/31a8505b-332c-4d45-b3a4-b4ace529efbd" />
